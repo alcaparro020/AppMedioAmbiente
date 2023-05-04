@@ -1,0 +1,7 @@
+{
+  "name": "appMedioambiente",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,36 @@
+<ion-content class="principalContainer">
+
+  <ion-title class="greeting">{{'greeting' | translate }}</ion-title>
+
+  <ion-text>
+    <h1 class="description">{{'description' | translate }}</h1>
+  </ion-text>
+
+  <ion-list class="themes">
+    <app-card-tematica *ngFor="let card of arrayCardsTheme" class="theme" [icon]="card.icon" [text]="card.textCard"
+      [backgroundColor]="card.backGroundColor"></app-card-tematica>
+
+      
+    <!-- <app-card-tematica class="theme" icon="/assets/img/Caza.svg" text="Caza"
+      backgroundColor="#FFFFFF"></app-card-tematica>
+    <app-card-tematica class="theme" icon="/assets/img/Pezca.svg" text="Pezca"
+      backgroundColor="#FFFFFF"></app-card-tematica>
+    <app-card-tematica class="theme" icon="/assets/img/Reciclaje.svg" text="Reciclaje"
+      backgroundColor="#FFFFFF"></app-card-tematica>
+    <app-card-tematica class="theme" icon="/assets/img/Residuos.svg" text="Residuos"
+      backgroundColor="#FFFFFF"></app-card-tematica>
+    <app-card-tematica class="theme" icon="/assets/img/Prevencion.svg" text="Prevención y calidad ambiental"
+      backgroundColor="#FFFFFF"></app-card-tematica> -->
+  </ion-list>
+
+  <ion-row class="newTheme">
+    <ion-text>
+      <h1 class="themeText">{{'themeText' | translate }}</h1>
+    </ion-text>
+    <ion-toggle class="prueba2" [checked]="true"></ion-toggle>
+  </ion-row>
+
+  <ion-button class="continue" fill="clear" (click)="takePhoto()">
+    <!-- <ion-img class="continueImg" src="/assets/img/Continuar.svg"></ion-img> -->
+  </ion-button>
+</ion-content>

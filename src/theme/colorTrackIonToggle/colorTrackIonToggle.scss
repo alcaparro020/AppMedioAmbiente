@@ -1,0 +1,43 @@
+
+
+.prueba2:host {
+    --track-background: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.39);
+    --track-background-checked: rgba(var(--ion-color-primary-rgb, 56, 128, 255), 0.5);
+    --border-radius: 14px;
+    --handle-background: #ffffff;
+    --handle-background-checked: var(--ion-color-primary, #3880ff);
+    --handle-border-radius: 50%;
+    --handle-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    --handle-width: 20px;
+    --handle-height: 20px;
+    --handle-max-height: calc(100% + 6px);
+    --handle-spacing: 0;
+    --handle-transition: transform 160ms cubic-bezier(0.4, 0, 0.2, 1), background-color 160ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    --track-background: #6b6d6c;
+    --track-background-checked: #333333;
+    --handle-background: #FFFFFF;
+    --handle-background-checked: #FFFFFF;
+}
+
+.prueba:host {
+    display: inline-block;
+    position: relative;
+    max-width: 1000%;
+    outline: none;
+    cursor: pointer;
+    touch-action: none;
+    user-select: none;
+    z-index: 2;
+    box-sizing: content-box !important;
+}
+.newTheme[_ngcontent-jkf-c86] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    --margin-top: 11px;
+    --background: #F5F5F5;
+}

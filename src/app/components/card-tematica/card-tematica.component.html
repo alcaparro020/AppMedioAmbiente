@@ -1,0 +1,9 @@
+<!--<div [style.background-color]="backgroundColor" class="theme">
+  <img class="themeIcon" src="{{icon}}" alt="{{text}}">
+  <p class="themeText">{{text}}</p>
+</div>-->
+
+<ion-card [style.background-color]="backgroundColor" class="theme">
+  <ion-img class="themeIcon" [src]="icon"></ion-img>
+  <ion-card-title class="themeText">{{text}}</ion-card-title>
+</ion-card>
